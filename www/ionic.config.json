@@ -1,0 +1,7 @@
+{
+  "name": "tca-monopoly",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

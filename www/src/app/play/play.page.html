@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Play</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button expand="block" id = "payButtons" (click)="payButton()">Pay the Rent</ion-button>
+
+  <ion-item>
+    <ion-label>This game has paid {{count}} rent times</ion-label>
+  </ion-item>
+  <ion-button expand="block" id = "collectButtons" (click)="collectButton()">Collect the Rent</ion-button>  <ion-item>
+    <ion-label>This game has collected {{count2}} rent times</ion-label>
+  </ion-item>
+  <ion-grid class="ion-no-margin">
+    <ion-row>
+      <ion-col >
+        <ion-button
+        class="ion-no-margin"
+
+        color="secondary"
+
+        id="startGame"
+        size="default"
+        (click)="quit()">
+        Quit
+      </ion-button>
+    </ion-col>
+    <ion-col >
+        <ion-button
+          class="ion-no-margin"
+
+          color="primary"
+
+          id="startGame"
+          size="default"
+          (click)="lose()">
+          Lose
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button
+          class="ion-no-margin"
+          color="success"
+          id="winGame"
+
+          size="default"
+          (click)="win()">
+          Win
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
